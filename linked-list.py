@@ -60,6 +60,11 @@ llist = LinkedList()
 llist.insertAtBeginning(10)
 llist.insertAtBeginning(20)
 llist.insertAtBeginning(30)
+
+llist.insertAtEnd(15)
+llist.insertAtEnd(25)
+llist.insertAtEnd(35)
+
 # Print the linked list
 llist.printList()
 print("Length:", llist.getLength())
