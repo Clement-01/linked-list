@@ -61,9 +61,9 @@ llist.insertAtBeginning(10)
 llist.insertAtBeginning(20)
 llist.insertAtBeginning(30)
 
-llist.insertAtEnd(15)
-llist.insertAtEnd(25)
-llist.insertAtEnd(35)
+llist.insertAtEnd(60)
+llist.insertAtEnd(70)
+llist.insertAtEnd(90)
 
 # Print the linked list
 llist.printList()
