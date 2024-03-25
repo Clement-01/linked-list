@@ -28,6 +28,20 @@ class LinkedList:
     self.head = node
 
 
+  def insertAtEnd(self, val):
+        node = Node(val, self.head)
+        
+        if self.head is None:
+            self.head = node
+            return
+        
+        itr = self.head
+        while itr.next:
+            itr = itr.next
+            
+        itr.next = node
+    
+
 llist = LinkedList()
 
 llist.insertAtBeginning(10)
