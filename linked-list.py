@@ -21,6 +21,19 @@ class LinkedList:
       else:
         print(itr.val)
 
+
+  def getLength(self):
+        count = 0
+        if self.head is None:
+            return count
+            
+        itr = self.head
+        while itr:
+            count += 1
+            itr = itr.next
+            
+        return count
+
   
   def insertAtBeginning(self, val):
     node = Node(val, self.head)
@@ -49,6 +62,7 @@ llist.insertAtBeginning(20)
 llist.insertAtBeginning(30)
 # Print the linked list
 llist.printList()
+print("Length:", llist.getLength())
 
   
  
