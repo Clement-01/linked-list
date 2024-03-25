@@ -53,6 +53,22 @@ class LinkedList:
             itr = itr.next
             
         itr.next = node
+
+  
+  def deleteMiddle(self, head):
+        self.head = head
+        if self.head is None or self.head.next is None:
+            return
+        
+        itr = self.head
+        middleNode = self.getLength() // 2
+        copyHead = itr
+        
+        while middleNode > 1:
+            middleNode -= 1
+            itr = itr.next
+            
+        itr.next = itr.next.next
     
 
 llist = LinkedList()
